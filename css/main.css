@@ -1,0 +1,85 @@
+:root{
+    --color-primary: #2e586e;
+    --color-secundary: #0477BF;
+    --color-white-hold: #fbf9ea;
+    --color-oscuro: #c1c7b9;
+    --color-neutro: #75929a;
+    --white: #fff;
+    --white-dark: #b0baba;
+}
+html{
+    height: 100vh;
+    background-image: url('../assets/img/wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    color: #000;
+}
+header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+header .header__icons__container{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: var(--color-primary);
+}
+header .header__icons__container .icons{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    justify-self: end;
+    margin-right: 50px;
+    gap: 25px;
+}
+.icons__a{
+    color: var(--white);
+    font-size: 20px;
+}
+.icons__a:hover{
+    color:var(--white-dark);
+}
+header .nav__logo__container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+header .nav__logo__container .nav__logo .logo__picture a img{
+    width: 220px;
+}
+header .nav__logo__container .nav__logo{
+    justify-self: start;
+    margin-left: 30px;
+}
+header .nav__logo__container .nav__profile__link{
+    justify-self: end; /* tirar a la derecha*/
+    align-self: center; /*hacer compacta la rejilla con el contenido*/
+    margin-right: 50px;
+}
+header .nav__logo__container .nav__profile__link a{
+    transition: .9s all cubic-bezier(0.14, 0.63, 0.42, 0.94);
+}
+header .nav__logo__container .nav__profile__link a:hover{
+    color: #fff;
+    transition: .9s all cubic-bezier(0.14, 0.63, 0.42, 0.94);
+}
