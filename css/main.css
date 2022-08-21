@@ -5,11 +5,12 @@
     --color-oscuro: #c1c7b9;
     --color-neutro: #75929a;
     --white: #fff;
+    --gray: #b4b4b4;
     --white-dark: #b0baba;
 }
-html{
+.home{
     height: 100vh;
-    background-image: url('../assets/img/wallpaper.jpg');
+    background-image: url('../assets/img/minimalist.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +32,7 @@ a{
 }
 header{
     width: 100%;
-    height: 140px;
+    height: 120px;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -65,21 +66,62 @@ header .nav__logo__container{
     grid-template-columns: 1fr 1fr;
 }
 header .nav__logo__container .nav__logo .logo__picture a img{
-    width: 220px;
+    width: 150px;
 }
 header .nav__logo__container .nav__logo{
     justify-self: start;
     margin-left: 30px;
 }
 header .nav__logo__container .nav__profile__link{
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
     justify-self: end; /* tirar a la derecha*/
     align-self: center; /*hacer compacta la rejilla con el contenido*/
     margin-right: 50px;
 }
 header .nav__logo__container .nav__profile__link a{
-    transition: .9s all cubic-bezier(0.14, 0.63, 0.42, 0.94);
+    font-weight: bolder;
 }
 header .nav__logo__container .nav__profile__link a:hover{
-    color: #fff;
-    transition: .9s all cubic-bezier(0.14, 0.63, 0.42, 0.94);
+    text-decoration: underline;
+}
+.main__container{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    place-content: center;
+    padding-top: 40px;
+}
+.main__container h1{
+    color: var(--white);
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+}
+.main__container button{
+    justify-self: center; /*centrar contenido*/
+    text-align: center;
+}
+.main__container button a{
+    color:var(--white);
+}
+.btn{
+    cursor: pointer;
+    border: none;
+    font-size:15px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    width:120px;
+    height:40px;
+    font-weight:bold;
+    border-radius: 3px;
+}
+.btn-primary:hover {
+    background:linear-gradient(rgba(58, 143, 245, 1),var(--color-secundary));
+}
+.btn-primary{
+    background:linear-gradient( var(--color-secundary), rgba(58, 143, 245, 1));
 }
