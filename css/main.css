@@ -125,3 +125,52 @@ header .nav__logo__container .nav__profile__link a:hover{
 .btn-primary{
     background:linear-gradient( var(--color-secundary), rgba(58, 143, 245, 1));
 }
+
+/* ------- SECCION DE BLOGS.HTML ---------*/
+.post__container-principal{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:"title title"
+    "image description";
+    background-color: var(--gray);
+}
+.post__container-principal .title-post{
+    grid-area: title;
+    margin-left: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+.post__container-principal .container__img-post{
+    grid-area: image;
+    justify-self: center;
+}
+.post__container-principal .container__description-post{
+    grid-area: description;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.post__container-principal .container__description-post h3{
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.post__container-principal .container__img-post picture img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+@media screen and (max-width:768px){
+    .post__container-principal{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:"title"
+        "image"
+        "description";
+        background-color: var(--gray);
+    }
+}
