@@ -315,6 +315,7 @@ header .nav__logo__container .nav__profile__link a:hover{
     margin-right: 30px;
     position: relative;
     z-index: 20;
+    border-radius: 5px;
 }
 .profile__container-principal .container__description-profile{
     max-width: 400px;
