@@ -330,12 +330,6 @@ header .nav__logo__container .nav__profile__link a:hover{
     background-color: var(--gray);
     padding: 20px 0 20px 0;
 }
-
-
-
-
-
-
 .projects__container{
     max-width: 90%;
     margin: 0 auto;
@@ -388,16 +382,6 @@ header .nav__logo__container .nav__profile__link a:hover{
     display: flex;
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width:768px){
     .post__container-principal{
         display: grid;
