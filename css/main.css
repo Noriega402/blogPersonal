@@ -302,6 +302,102 @@ header .nav__logo__container .nav__profile__link a:hover{
     display: inline-block;
     margin-bottom: -15px;
 }
+/* ------ SECCION PROFILE.HTML  -------*/
+.profile__container-principal{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.profile__container-principal .container__img-profile img{
+    max-width: 400px;
+    height: 300px;
+    margin-right: 30px;
+    position: relative;
+    z-index: 20;
+}
+.profile__container-principal .container__description-profile{
+    max-width: 400px;
+}
+.profile__container-principal .container__description-profile .title-profile{
+    font-size: 30px;
+    font-family: 'Quicksand',sans-serif;
+}
+.profile__container-principal .container__description-profile p{
+    font-family: 'Quicksand', sans-serif;
+}
+.profile__container-principal{
+    background-color: var(--gray);
+    padding: 20px 0 20px 0;
+}
+
+
+
+
+
+
+.projects__container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.projects__container div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-direction: row;
+}
+.projects__container h3{
+    border-bottom: 1px solid #333;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    font-family: 'Quicksand',sans-serif;
+}
+.projects__container div .project__card{
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 18px 0px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 2px 2px 18px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 2px 2px 18px 0px rgba(0,0,0,0.35);
+}
+.projects__container div .project__card img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+}
+.projects__container div .project__card h4{
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    margin-left: 10px;
+}
+.projects__container div .project__card p{
+    font-size: 14px;
+    font-family: 'Quicksand',sans-serif;
+    margin-left: 10px;
+}
+.projects__container div .project__card .btn-blog{
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.projects__container div .project__card a{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:768px){
     .post__container-principal{
         display: grid;
