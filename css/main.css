@@ -401,4 +401,11 @@ header .nav__logo__container .nav__profile__link a:hover{
         margin: 0 auto;
         margin-bottom: 20px;
     }
+    .profile__container-principal .container__description-profile{
+        padding: 16px;
+    }
+    .profile__container-principal .container__description-profile .title-profile{
+        font-size: 26px;
+        text-align: center;
+    }
 }
